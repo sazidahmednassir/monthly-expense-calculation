@@ -15,12 +15,6 @@ const calculate = document.getElementById('calculate');
 const save=document.getElementById('savings');
 
 
-//function error
-function err (id){
-    document.getElementById(id).style.display='inline-block';
-}
-
-
 
 //input value function
 function Inputvalue(id){
@@ -51,6 +45,37 @@ function setText (id, val){
 }
 
 
+//savings calculation
+function savings(savebal, revenue){
+    let percantage=0;
+    let savingBalance=0;
+
+    percantage= (savebal* revenue) / 100;
+     
+    
+
+    setText('saving-amount' , percantage);
+
+    
+
+    let balance= document.getElementById('balance').innerText;
+
+    if(balance < percantage){
+        alert("You don't have much balance");
+    } else{
+
+        savingBalance=balance - percantage;
+        setText('remaining-balance', savingBalance)
+
+
+    }
+
+   
+    
+
+    
+}
+
 
 //calculation event
 calculate.addEventListener('click', function(){
@@ -63,7 +88,7 @@ calculate.addEventListener('click', function(){
     const clothes=  Inputvalue('clothes');
 
     expense= parseInt(food) + parseInt(rent) + parseInt(clothes);
-    console.log(expense);
+    
     
     setText('total-expense', expense)
     
@@ -88,21 +113,7 @@ save.addEventListener('click', function(){
     const income=  Inputvalue('income');
     const save= Inputvalue('save');
 
-    percantage= (save * income) / 100;
-     
-    
+    savings(save, income);
 
-    setText('saving-amount' , percantage);
-
-    let balance= document.getElementById('balance').innerText;
-
-    savingBalance=balance - percantage;
-
-    
-
-    setText('remaining-balance', savingBalance)
-
-    
-   
 })
 
