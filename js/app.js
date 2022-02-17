@@ -52,11 +52,7 @@ function savings(savebal, revenue){
 
     percantage= (savebal* revenue) / 100;
      
-    
-
-    setText('saving-amount' , percantage);
-
-    
+     setText('saving-amount' , percantage);
 
     let balance= document.getElementById('balance').innerText;
 
@@ -67,13 +63,9 @@ function savings(savebal, revenue){
         savingBalance=balance - percantage;
         setText('remaining-balance', savingBalance)
 
-
-    }
+ }
 
    
-    
-
-    
 }
 
 
@@ -98,9 +90,6 @@ calculate.addEventListener('click', function(){
     setText('balance' , total);
 
     
-    
-    
-
    
 })
 
