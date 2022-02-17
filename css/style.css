@@ -9,3 +9,10 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #ff0000;
 }
+
+.half-width {
+  height: 570px;
+
+  padding: 30px;
+  text-align: center;
+}
