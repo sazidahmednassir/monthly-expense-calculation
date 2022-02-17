@@ -20,6 +20,7 @@ const save=document.getElementById('savings');
 calculate.addEventListener('click', function(){
     let total=0;
     let expense=0;
+    
     const income= document.getElementById('income').value;
     const food= document.getElementById('food').value;
     const rent= document.getElementById('rent').value;
@@ -34,6 +35,8 @@ calculate.addEventListener('click', function(){
     document.getElementById('balance').innerText=total;
 
     
+    
+    
 
    
 })
@@ -43,12 +46,19 @@ calculate.addEventListener('click', function(){
 //saving event
 save.addEventListener('click', function(){
     let percantage=0;
+    let savingBalance=0;
     const income= document.getElementById('income').value;
     const save=document.getElementById('save').value;
 
     percantage= (save * income) / 100;
      
     document.getElementById('saving-amount').innerText=percantage;
+
+    let balance= document.getElementById('balance').innerText;
+
+    savingBalance=balance - percantage;
+
+    document.getElementById('remaining-balance').innerText=savingBalance; 
 
     
    
