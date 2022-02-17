@@ -22,7 +22,7 @@ function Inputvalue(id){
     let inputAmount= parseInt(inputBox.value);
      if(isNaN(inputAmount) || inputAmount< 0){
          inputBox.value= '';
-         alert('enter value');
+         alert('Enter Number Value');
        
      }
      else{
