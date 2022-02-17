@@ -22,7 +22,7 @@ function Inputvalue(id){
     let inputAmount= parseInt(inputBox.value);
      if(isNaN(inputAmount) || inputAmount< 0){
          inputBox.value= '';
-         alert('Enter Number Value');
+         alert('Enter Positive Number Value');
        
      }
      else{
@@ -45,19 +45,19 @@ function setText (id, val){
 }
 
 
-//savings calculation
+//savings calculation function
 function savings(savebal, revenue){
     let percantage=0;
     let savingBalance=0;
 
-    percantage= (savebal* revenue) / 100;
+    percantage= Math.round((savebal* revenue) / 100);
      
      setText('saving-amount' , percantage);
 
     let balance= document.getElementById('balance').innerText;
 
     if(balance < percantage){
-        alert("You don't have much balance");
+        alert("You don't have Much Balance");
     } else{
 
         savingBalance=balance - percantage;
