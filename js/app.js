@@ -40,14 +40,6 @@ function Inputvalue(id){
 //setText Function
 function setText (id, val){
    let innerTextId =document.getElementById(id);
-//    let innerTextAmount= parseInt(innerTextId).innerText;
-//    console.log(innerTextAmount);
-
-//        if(isNaN(innerTextAmount) || innerTextAmount < 0){
-//            innerTextId.innerText= 0;
-//        } else{
-//         innerTextId.innerText= innerTextAmount;
-//        }
    if(isNaN(val) || val < 0){
     innerTextId.innerText= 0;
    } else{
