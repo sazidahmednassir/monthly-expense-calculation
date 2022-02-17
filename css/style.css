@@ -14,3 +14,8 @@ html {
   padding: 30px;
   text-align: center;
 }
+
+.invalid-feedback {
+  display: hidden;
+  color: #ff0000;
+}
