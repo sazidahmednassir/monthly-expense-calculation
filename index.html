@@ -24,17 +24,7 @@
 
      <!-- main start -->
      <main>
-         <!-- <section>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="half-width">
-                        <img src="581.jpg" class="img-fluid" alt="...">
-                    </div>
-                    <div class="col-md-6">
-                        <p class="h4"> Income</p>
-                    </div>
-                </div>
-         </section> -->
+         
          <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -52,36 +42,54 @@
                                     <input id="income" type="text" class="form-control" placeholder="Enter Your Income">
                                 </div>
                               </div>
+                              <p class="h4 mt-3"> Expenses</p>
+                              <div>
+                                <div class="form-group row">
+                                    <label for="food" class="col-sm-2 col-md-3  col-form-label h3">Food :</label>
+                                    <div class="col-sm-10 col-md-6">
+                                        <input id="food" type="text" class="form-control" placeholder="Enter Your Income">
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="form-group row mt-3">
+                                        <label for="rent" class="col-sm-2 col-md-3  col-form-label h3">Rent :</label>
+                                        <div class="col-sm-10 col-md-6">
+                                            <input id="rent" type="text" class="form-control" placeholder="Enter Your Rent">
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <div class="form-group row mt-3">
+                                            <label for="clothes" class="col-sm-2 col-md-3  col-form-label h3">Clothes :</label>
+                                            <div class="col-sm-10 col-md-6">
+                                                <input id="clothes" type="text" class="form-control" placeholder="Enter Your Clothes">
+                                            </div>
+                                          </div>
+                                          <button id="calculate" type="button" class="btn btn-primary btn-lg mt-3">Calculate</button>
+
+                                          <p class="h4 mt-3 me-5"> Total Expenses : <span id="total-expense"></span> </p>
+                                          <p class="h4 mt-3 me-5"> Balance : <span id="balance"></span> </p>
+                                      
+                                          <div class="form-group row mt-3">
+                                            <label for="save" class="col-sm-2 col-md-3  col-form-label h3">Save :</label>
+                                            <div class="col-sm-10 col-md-8 d-flex gap-3">
+                                                <input id="save" type="text" class="form-control " placeholder="Enter Your Savings">
+                                                <p class="h3">%</p>
+                                                <button id="save" type="button" class="btn btn-primary  ">Save</button>
+                                            </div>
+                                            
+                                          </div>
+
                           </div>
-                                <div class="calc-button-row">
-                                    <div class="button">4</div>
-                                    <div class="button">5</div>
-                                    <div class="button">6</div>
-                                </div>
-                                <div class="calc-button-row">
-                                    <div class="button">1</div>
-                                    <div class="button">2</div>
-                                    <div class="button">3</div>
-                                </div>
-                                <div class="calc-button-row">
-                                    <div class="button">&lt;</div>
-                                    <div class="button">0</div>
-                                    <div class="button">C</div>
-                                </div>
-                                <div>
-                                    <button onclick="verifyPin()" type="submit" class="submit-btn" id="submit_btn">Submit</button>
-                                    <p  class="action-left"> <span id="left"></span>  try left</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                
+                                
+                                
+                          <p class="h4 mt-3 me-5"> Saving Amount : <span id="saving-amount" span> </p>
+                          <p class="h4 mt-3 me-5"> Remaining Balance : <span id="remaining-balance"></span> </p>            
+                        
                 </div>
-                <div class="notify-section">
-                    <p id="notify-fail" class="notify">❌ Pin Didn't Match, Please try again</p>
-                    <p id="notify-success" class="notify">✅ Pin Matched... Secret door is opening for you</p>
-                </div>
-            </div>
+                
      </main>
+     <!-- main end -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
